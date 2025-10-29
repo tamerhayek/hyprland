@@ -1,0 +1,42 @@
+font=FiraCode-Regular 11
+border-size=2
+margin=6
+padding=5,8
+layer=overlay
+icon-path=/usr/share/icons/Tela-circle-dracula-dark
+anchor=top-right
+
+background-color=#282a36
+text-color=#f8f8f2
+border-color=#50fa7b
+progress-color=#44475a
+group-by=app-name
+
+on-button-middle=exec makoctl menu -n "${id}" fuzzel
+
+[app-name="System"]
+group-by=none
+
+[app-name="Progress"]
+group-by=none
+
+[urgency=low]
+border-color=#50fa7b
+default-timeout=10000
+#on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/dialog-information.oga
+
+[urgency=normal]
+border-color=#f1fa8c
+default-timeout=10000
+#on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
+
+[urgency=high]
+border-color=#ff5555
+default-timeout=0
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/dialog-error.oga
+
+[mode=do-not-disturb]
+invisible=1
+
+[actionable=true]
+
