@@ -22,17 +22,17 @@ group-by=none
 
 [urgency=low]
 border-color=#50fa7b
-default-timeout=10000
+default-timeout=5000
 #on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/dialog-information.oga
 
 [urgency=normal]
 border-color=#f1fa8c
-default-timeout=10000
+default-timeout=5000
 #on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
 
 [urgency=high]
 border-color=#ff5555
-default-timeout=0
+default-timeout=5000
 on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/dialog-error.oga
 
 [mode=do-not-disturb]
